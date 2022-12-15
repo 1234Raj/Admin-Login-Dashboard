@@ -1,0 +1,66 @@
+/* Home Page */
+.bg{
+    background-color: #121f3d;
+  }
+  .layout  {
+    display: block;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
+  }
+  .Example {
+    display: flex;
+    align-items: center;
+    padding: 5rem 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .Example h2{
+    margin-top: 50px;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    color:white ;
+    margin-bottom: 20px;
+  }
+  .APIcards{
+    inline-size: 100%;
+    
+  }
+  .cards{
+  width: 300px;
+    display: inline-flex;
+   flex-direction:column;
+   padding: 10px 10px;
+   background: hsl(215deg 13% 89%);
+   margin-bottom: 10px;
+   margin-right: 10px;
+  
+   
+  
+  }
+  .cards img{
+    max-width: 100%;
+    width: 250px;
+    cursor: pointer;
+  }
+  .cards .Name-Price h5{
+  margin-top: 5px;
+  }
+  .cards .Name-Price p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .cards img:focus{
+    width: 220px;
+  }
+  .cards .AddCart button{
+    background:#121f3d;
+    color: #fff;
+    padding: 5px 15px;
+    border-color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+  
+  }

@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+  padding: 15px 0;
+  background: hsl(215deg 13% 89%);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar .head-navbar{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color:#121f3d;
+  font-size: 3.5vmin;
+  font-weight: 600;
+  margin-left: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar .menu{
+  margin-right: 50px;
+}
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+  
+}
+.navbar .menu li a{
+  padding-top: 10px;
+  display: block;
+  color:#121f3d;
+  font-size: 2vmin;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+  color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .navbar{
+  background-color:#dc143c;
+   height: 100px;
+  
+} */
+
+.navbar .navbar-brand{
+  margin-left: 60px;
+  color: #121f3d;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+   color: #121f3d;
+   font-size: 1.5rem;
+  
+}
+.navbar .btn{
+  margin-right: 60px;
+  font-size: 1.4rem;
+  border-color: #121f3d;
+}
+/* Signup */
+.signup{
+width: 100%;
+font-weight: 400;
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+ .form{
+margin-top: 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+.signup .Head{
+  text-align: center;
+    font-family: Madefor,HelveticaNeueW01-Thin,HelveticaNeueW02-Thin,HelveticaNeueW10-35Thin,sans-serif;
+    color: #20303c;
+    font-weight: 700;
+}
+.signup .Head h1{
+  margin-top: 50px;
+  font-size: 80px;
+  font-weight: bold;
+}
+.signup .Head h3 span{
+  color: blue;
+}
+.form input[type="email"],input[type="password"]{
+  width: 500px;
+  border: none;
+  box-shadow: none;
+  border-bottom: 3px solid black;
+  font-size: 20px;
+}
+ .form input[type="text"]{
+  width: 500px;
+  border: none;
+  box-shadow: none;
+  border-bottom: 3px solid black;
+  font-size: 20px;
+ }
+.form input[type="password"]{
+  box-shadow: none;
+   
+}
+.form  input[type="checkbox"]{
+   border-color: #02040d;
+ margin-right: 10px;
+ box-shadow: none;
+ box-sizing: 20px;
+ height: 20px;
+ width: 20px;
+ 
+}
+.form button{
+  padding: 15px 70px;
+  border-radius: 35px;
+  font-size: 15px;
+  color:whitesmoke;
+  background-color: rgb(6, 33, 88);
+}
+.form button:disabled{
+  background-color: grey !important;
+}
+.form button:hover{
+  border-color:rgb(6, 33, 88) ;
+}
+.form .form-label{
+  font-size: 20px;
+  font-weight: 300;
 }
